@@ -35,7 +35,7 @@ public class GameSettings {
                 if (board[x][y] != color)
                     continue;
 
-                int num[][] = new int[2][30];
+                int num[][] = new int[2][10];
 
                 for (int i = 0; i < 4; i++) {
                     int count = 1;
@@ -67,6 +67,7 @@ public class GameSettings {
                     if(flag1 + flag2 > 0) num[flag1 + flag2 - 1][count]++;
                 }
 
+               // if (count)
                 /* 0 means this position is empty, 1 means there are pieces in this position in the annotation./
                  They represent chessboards in different situations */
                 // 011111, 111110, 11111

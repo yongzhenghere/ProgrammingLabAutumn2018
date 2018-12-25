@@ -26,10 +26,15 @@ public class ChessTest {
     @Test
     public void isWinTest() {
         gs.move(7,7, gs.WHITE);
+        gs.move(6,7, gs.BLACK);
         gs.move(6,6, gs.WHITE);
+        gs.move(5,7, gs.BLACK);
+        gs.move(4,7, gs.BLACK);
         gs.move(5,5, gs.WHITE);
         gs.move(4,4, gs.WHITE);
         gs.move(4,5, gs.WHITE);
+        gs.move(3,5, gs.WHITE);
+        gs.move(2,5, gs.WHITE);
         gs.move(3,3, gs.WHITE);
         Assert.assertEquals(gs.WHITE, gs.isWin(7,7, gs.WHITE));
         gs.unMove(5,5);
